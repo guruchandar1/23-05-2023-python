@@ -1,0 +1,11 @@
+n=int(input("Enter how many values you want to read : "))
+a=array([int(input(f"Enter the value of a[{i}] : "))for i in range(n)])
+b=array([int(input(f"Enter the value of b[{i}] : "))for i in range(n)])
+t=0
+for i in range(n):
+    if a[i]!=b[i]:
+        t=1
+        print("Both arrays are not equal")
+        break
+if t==0:
+    print("Both arrays are equal")
