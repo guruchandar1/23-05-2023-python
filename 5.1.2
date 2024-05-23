@@ -1,0 +1,12 @@
+n=int(input("Enter size: "))
+print("Enter elements",end='')
+s=input(": ").split()
+k=input("Enter search key: ")
+t=0
+for i in range(n):
+    if s[i]==k:
+        print(f"{k} found at position {i+1}")
+        t=1
+        break
+if t==0:
+    print(k,"not found")
