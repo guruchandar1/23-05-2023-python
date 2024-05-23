@@ -1,0 +1,22 @@
+n=int(input("Enter array size : "))
+if n>0:
+    a=input("Enter array elements : ").split()
+    l=[]
+    m=[]
+    for i in range(n):
+        l.append(int(a[i]))
+        m.append(int(a[i]))
+    l.sort()
+    m.sort()
+    l=sqrt(l)
+    t=0
+    for i in range(n-1,-1,-1):
+        x=int(l[i])
+        if l[i]!=float(x):
+            t=1
+            print(m[i])
+            break
+    if t==0:
+        print("-1")
+else:
+    print("Invalid input")
