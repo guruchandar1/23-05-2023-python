@@ -1,0 +1,13 @@
+n=int(input("Enter array size : "))
+if n>0:
+    l=input(f"Enter {n} array elements : ").split()
+    t=0
+    for i in range(n):
+        for j in range(i+1,n):
+            if l[i]==l[j]:
+                t=1
+                print(f"The repetitive element : {l[i]}")
+    if t==0:
+        print("Array elements are not repeted")
+else:
+    print("Invalid input")
