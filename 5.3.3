@@ -1,0 +1,15 @@
+if n>0:
+    a=input("Enter sorted array elements : ").split()
+    t=0
+    l=[]
+    for i in range(n):
+        for j in range(n-1,i,-1):
+            if a[i]==a[j]:
+                t=1
+                l.append(j)
+    if t==1:
+        print("Last index:",max(l))
+    if t==0:
+        print("No duplicate found")
+else:
+    print("Invalid array size")
