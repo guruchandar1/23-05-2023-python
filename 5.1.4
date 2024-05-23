@@ -1,0 +1,27 @@
+n=int(input("Enter size: "))
+s=input(f"Enter {n} elements: ").split()
+for x in range(100):
+    print("Array elements: ",end='')
+    for i in range(n):
+        print(s[i],end=' ')
+    print("\n1. Insert a number\n2. Delete a number\n3. Exit")
+    c=int(input("Enter your choice: "))
+    if c==2:
+        l=int(input("Location: "))
+        if l<n:
+            print(f"{s[l]} deleted from location {l}")
+            s.remove(s[l])
+            n-=1
+        else:
+            print("Invalid location")
+    if c==1:
+        l=int(input("Location: "))
+        a=int(input("Number: "))
+        if l<=n:
+            print(f"{a} inserted at location {l}")
+            s.insert(l,a)
+            n+=1
+        else:
+            print("Invalid location")
+    if c==3:
+        break
