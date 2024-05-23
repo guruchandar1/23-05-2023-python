@@ -1,0 +1,15 @@
+n=int(input("Enter the array size :"))
+if n>0:
+    s=input(f"Input {n} elements in an array : ").split()
+    l=[]
+    for i in range(n):
+        for j in range(i+1,n):
+            if s[i]==s[j] and s[i] not in l:
+                l.append(s[i])
+    print("The unique elements found in the array are : ")
+    for i in range(n):
+        if s[i] not in l:
+            print(s[i],end=' ')
+    print("\n")
+else:
+    print("Invalid Input")
