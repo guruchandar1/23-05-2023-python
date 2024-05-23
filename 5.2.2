@@ -1,0 +1,10 @@
+n=int(input("Enter how many values you want to read : "))
+l=[]
+for i in range(n):
+    a=int(input(f"Enter value of a[{i}] : "))
+    l.append(a)
+    l.sort()
+print("Array sorted in ascending order = ",end='')
+for i in range(n):
+    print(l[i],end=' ')
+print("\n")
