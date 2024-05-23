@@ -1,0 +1,7 @@
+n=int(input("Enter the number of values: "))
+s=input("Enter values : ").split()
+for i in range(n):
+    s[i]=float(s[i])
+print("Mean = {:.2f}".format(mean(s)))
+print("Variance = {:.2f}".format(var(s)))
+print("Deviation = {:.2f}".format(std(s)))
