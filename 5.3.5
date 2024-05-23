@@ -1,0 +1,17 @@
+n=int(input("Enter array size : "))
+if n>0:
+    a=input("Enter array elements : ").split()
+    c=0
+    for i in range(n):
+        a[i]=int(a[i])
+        if a[i]==0:
+            c+=1
+    a.sort()
+    for i in range(n):
+        if a[i]!=0:
+            print(a[i],end=' ')
+    for i in range(c):
+        print(end="0 ")
+    print("\n")
+else:
+    print("Invalid input")
